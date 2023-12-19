@@ -2,7 +2,7 @@
 function connexpdo(string $db)
 {
     $sgbd = "mysql"; // choix de MySQL
-    $host = "localhost";
+    $host = "dataaudience";
     $charset = "UTF8";
     $user = "sabarry"; // user id
     $pass = "saikou1993"; // password
