@@ -1,3 +1,5 @@
 podman run --name dataaudience --network gameNetwork --env MYSQL_ROOT_PASSWORD=saikou1993 --env MYSQL_DATABASE=audience --env MYSQL_USER=sabarry --env MYSQL_PASSWORD=saikou1993 --volume /comptes/E224740H/audience/Audiencede/audience.sql:/docker-entrypoint-initdb.d/init.sql  docker.io/mysql:latest
 
 podman container run --name audiance --publish 8220:80 --network gameNetwork localhost/audience:v1
+
+podman container run --name audience --publish 8220:80 --network gameNetwork --env db_host=dataaudience --env db_user=sabarry --env db_pass=saikou1993 docker-registry.univ-nantes.fr/e224740h/audience/audience:v1
