@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+/***********************/
+/* BLOCS */
+#convoques, #exempts, #absents {
+  width: 33.33%;
+  padding: 5px;
+  float: left;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/***********************/
+/* FORMULAIRE */
+legend, input {
+  font-weight: bold;
+}
+
+fieldset {
+  margin: auto;
+}
+
+input[type=submit], input[type=number] {
+  display: inline-block;
+  width: 120px;
+  height: 30px;
+  text-align: center;
+  font-size: 80%;
+}
+
+input[type=submit] {
+  background-color: #66B2FF;
+}
+
+input[type=number] {
+  background-color: lightblue;
+}
+
+/***********************/
+/* TABLEAU */
+table, th, td {
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid grey;
+  margin: 0 0 0 0;
+  height: 30px;
+  vertical-align: middle;
+}
+
+td {
+  padding: 0 0 0 20px;
+  text-align: left;
+}
+
+th {
+  text-align: center;
+}
+
+table:nth-child(2) th {
+  background-color: black;
+  color: lightgreen;
+}
+
+.convoques {
+  background-color: lightgreen;
+}
+
+select {
+  font-size: 90%;
+}
+
+table:nth-child(3) th {
+  background-color: black;
+  color: white;
+}
+
+.exempts {
+  background-color: white;
+}
+
+table:nth-child(4) th {
+  background-color: black;
+  color: red;
+}
+
+.absents {
+  background-color: red;
+}
+
+/***********************/
+/* IMAGES */
+img {
+  width: 100px;
+  height: 100px;
+  visibility: hidden;
+}

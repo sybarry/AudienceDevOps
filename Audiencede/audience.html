@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Tribunal</title>
+<link rel="stylesheet" type="text/css" href="audience.css" />
+</head>
+<body>
+   <form action="audience.php" method="post">
+      <!-- BOUTONS -->
+      <fieldset>
+         <input type="submit" name="extraire" value="EXTRAIRE" />
+         <input type="number" name="audience" value="1" min="1" max="4" />
+         <input type="submit" name="maj" value="METTRE A JOUR" />
+      </fieldset>
+      <!-- CONVOQUES -->
+      <table id="convoques">
+         <tr>
+            <th>CONVOQUES</th>
+         </tr>
+         <tr>
+            <td class="convoques">
+               <select name="c1">
+                  <option value="nemo">---</option>
+                  <option value="auguste" selected="selected">AUGUSTE</option>
+                  <option value="caligula">CALIGULA</option>
+                  <option value="cesar">CESAR</option>
+                  <option value="claude">CLAUDE</option>
+                  <option value="hadrien">HADRIEN</option>
+                  <option value="trajan">TRAJAN</option>
+               </select>
+            </td>
+         </tr>
+         <tr>
+            <td class="convoques">
+               <select name="c2">
+                  <option value="nemo">---</option>
+                  <option value="auguste">AUGUSTE</option>
+                  <option value="caligula">CALIGULA</option>
+                  <option value="cesar" selected="selected">CESAR</option>
+                  <option value="claude">CLAUDE</option>
+                  <option value="hadrien">HADRIEN</option>
+                  <option value="trajan">TRAJAN</option>
+               </select>
+            </td>
+         </tr>
+         <tr>
+            <td class="convoques">
+               <select name="c3">
+                  <option value="nemo">---</option>
+                  <option value="auguste">AUGUSTE</option>
+                  <option value="caligula">CALIGULA</option>
+                  <option value="cesar">CESAR</option>
+                  <option value="claude" selected="selected">CLAUDE</option>
+                  <option value="hadrien">HADRIEN</option>
+                  <option value="trajan">TRAJAN</option>
+               </select>
+            </td>
+         </tr>
+         <tr>
+            <td class="convoques">
+               <select name="c4">
+                  <option value="nemo">---</option>
+                  <option value="auguste">AUGUSTE</option>
+                  <option value="caligula">CALIGULA</option>
+                  <option value="cesar">CESAR</option>
+                  <option value="claude">CLAUDE</option>
+                  <option value="hadrien" selected="selected">HADRIEN</option>
+                  <option value="trajan">TRAJAN</option>
+               </select>
+            </td>
+         </tr>
+         <tr>
+            <td class="convoques">
+               <select name="c5">
+                  <option value="nemo">---</option>
+                  <option value="auguste">AUGUSTE</option>
+                  <option value="caligula">CALIGULA</option>
+                  <option value="cesar">CESAR</option>
+                  <option value="claude">CLAUDE</option>
+                  <option value="hadrien">HADRIEN</option>
+                  <option value="trajan" selected="selected">TRAJAN</option>
+               </select>
+            </td>
+         </tr>
+         <tr>
+            <td class="convoques">
+               <select name="c6">
+                  <option value="nemo">---</option>
+                  <option value="auguste">AUGUSTE</option>
+                  <option value="caligula">CALIGULA</option>
+                  <option value="cesar">CESAR</option>
+                  <option value="claude">CLAUDE</option>
+                  <option value="hadrien">HADRIEN</option>
+                  <option value="trajan">TRAJAN</option>
+               </select>
+            </td>
+         </tr>
+         <tr>
+            <td class="convoques">
+               <select name="c7" disabled="disabled">
+                  <option value="nemo">---</option>
+                  <option value="auguste">AUGUSTE</option>
+                  <option value="caligula">CALIGULA</option>
+                  <option value="cesar">CESAR</option>
+                  <option value="claude">CLAUDE</option>
+                  <option value="hadrien">HADRIEN</option>
+                  <option value="trajan">TRAJAN</option>
+               </select>
+            </td>
+         </tr>
+         <tr>
+            <td class="convoques">
+               <select name="c8" disabled="disabled">
+                  <option value="nemo">---</option>
+                  <option value="auguste">AUGUSTE</option>
+                  <option value="caligula">CALIGULA</option>
+                  <option value="cesar">CESAR</option>
+                  <option value="claude">CLAUDE</option>
+                  <option value="hadrien">HADRIEN</option>
+                  <option value="trajan">TRAJAN</option>
+               </select>
+            </td>
+         </tr>
+      </table>
+      <!-- EXEMPTS -->
+      <table id="exempts">
+         <tr>
+            <th>EXEMPTS</th>
+         </tr>
+         <tr>
+            <td class="exempts">CALIGULA</td>
+         </tr>
+         <tr>
+            <td class="exempts"></td>
+         </tr>
+         <tr>
+            <td class="exempts"></td>
+         </tr>
+         <tr>
+            <td class="exempts"></td>
+         </tr>
+         <tr>
+            <td class="exempts"></td>
+         </tr>
+         <tr>
+            <td class="exempts"></td>
+         </tr>
+         <tr>
+            <td class="exempts"></td>
+         </tr>
+         <tr>
+            <td class="exempts"></td>
+         </tr>
+      </table>
+      <!-- ABSENTS -->
+      <table id="absents">
+         <tr>
+            <th>ABSENTS</th>
+         </tr>
+         <tr>
+            <td class="absents">NERON</td>
+         </tr>
+         <tr>
+            <td class="absents">TIBERE</td>
+         </tr>
+         <tr>
+            <td class="absents"></td>
+         </tr>
+         <tr>
+            <td class="absents"></td>
+         </tr>
+         <tr>
+            <td class="absents"></td>
+         </tr>
+         <tr>
+            <td class="absents"></td>
+         </tr>
+         <tr>
+            <td class="absents"></td>
+         </tr>
+         <tr>
+            <td class="absents"></td>
+         </tr>
+      </table>
+   </form>
+   <div id="images">
+      <img title="auguste" src="img/auguste-pub.jpg"/>
+      <img title="caligula" src="img/caligula-pub.jpg"/>
+      <img title="cesar" src="img/cesar-pub.jpg"/>
+      <img title="claude" src="img/claude-pub.jpg"/>
+      <img title="hadrien" src="img/hadrien-pub.jpg"/>
+      <img title="neron" src="img/neron-pub.jpg"/>
+      <img title="tibere" src="img/tibere-pub.jpg"/>
+      <img title="trajan" src="img/trajan-pub.jpg"/>
+   </div>
+   <script src="audience.js"></script>
+</body>
+</html>
