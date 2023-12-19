@@ -2,10 +2,10 @@
 function connexpdo(string $db)
 {
     $sgbd = "mysql"; // choix de MySQL
-    $host = "dataaudience";
+    $host = getenv('db_host');
     $charset = "UTF8";
-    $user = "sabarry"; // user id
-    $pass = "saikou1993"; // password
+    $user =getenv('db_user'); // user id
+    $pass =getenv('db_pass'); // password
     try {
         $pdo = new PDO("$sgbd:host=$host;dbname=$db;charset=$charset", $user, $pass);
         // force le lancement d'exception en cas d'erreurs d'exécution de requêtes SQL
