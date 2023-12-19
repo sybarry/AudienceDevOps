@@ -1,3 +1,4 @@
+use audience;
 -- phpMyAdmin SQL Dump
 -- version 5.0.2
 -- https://www.phpmyadmin.net/
@@ -151,13 +152,13 @@ ALTER TABLE `PERSONNES`
 -- Contraintes pour la table `ABSENTS`
 --
 ALTER TABLE `ABSENTS`
-  ADD CONSTRAINT `absents_ibfk_1` FOREIGN KEY (`ID_PERSONNE`) REFERENCES `personnes` (`ID`) ON UPDATE CASCADE;
+  ADD CONSTRAINT `absents_ibfk_1` FOREIGN KEY (`ID_PERSONNE`) REFERENCES `PERSONNES` (`ID`) ON UPDATE CASCADE;
 
 --
 -- Contraintes pour la table `EXEMPTS`
 --
 ALTER TABLE `EXEMPTS`
-  ADD CONSTRAINT `exempts_ibfk_1` FOREIGN KEY (`ID_PERSONNE`) REFERENCES `personnes` (`ID`) ON UPDATE CASCADE;
+  ADD CONSTRAINT `exempts_ibfk_1` FOREIGN KEY (`ID_PERSONNE`) REFERENCES `PERSONNES` (`ID`) ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
